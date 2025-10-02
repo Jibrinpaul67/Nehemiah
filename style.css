@@ -1,0 +1,134 @@
+/* Orange Header */
+.orangehead {
+  background-color: orange;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 20px;
+}
+
+/* Left side: Login + Signup */
+.call a {
+  margin-left: 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.call a:first-child {
+  color: red;   /* Login */
+}
+
+.call a:last-child {
+  color: white; /* Signup */
+}
+
+/* Right side: Call us now */
+.register a {
+  text-decoration: none;
+  font-weight: bold;
+  color: red; /* "Call us now:" text */
+}
+
+.register a::after {
+  content: " 385.154.11.28.35";  /* number after text */
+  color: white; /* number is white */
+  font-weight: normal;
+}
+/* Grey Header */
+.greyhead {
+  background-color: grey;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  height: 80px; 
+}
+
+/* Logo: "YOUR" (black) "LOGO" (orange) */
+.greyhead h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.greyhead h1::first-letter {
+  text-transform: uppercase;
+}
+
+.greyhead h1 {
+  color: black;
+}
+
+.greyhead h1 span {
+  color: orange;
+}
+
+/* Nav Links */
+.nav-links {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  position: relative;
+  padding: 5px;
+}
+
+/* Dropdown container */
+.dropdown {
+  position: relative;
+}
+
+.dropdown a {
+  cursor: pointer;
+}
+
+/* Hidden dropdown content */
+.dropcontent {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  min-width: 150px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  border-radius: 4px;
+  z-index: 100;
+}
+
+.dropcontent a {
+  display: block;
+  padding: 10px;
+  color: black;
+  font-weight: normal;
+}
+
+.dropcontent a:hover {
+  font-weight: bold;
+  background: #f5f5f5;
+}
+
+/* Show dropdown when clicked */
+.dropdown:focus-within .dropcontent {
+  display: block;
+}
+
+/* Orange underline when clicked */
+.dropdown:focus-within > a {
+  border-bottom: 3px solid orange;
+}
+/* Contact half force-align left */
+.contactushalf {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* pushes everything to the left */
+  text-align: left;
+}
+
+
+
