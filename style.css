@@ -8,7 +8,7 @@
     body {
       background: #fff;
       color: #333;
-    font-family: 'Open Sans', Arial, sans-serif;
+      font-family: 'Open Sans', Arial, sans-serif;
     }
 
     .top-bar {
@@ -18,16 +18,13 @@
       display: flex;
       justify-content: space-between;
       font-size: 14px;
+      flex-wrap: wrap;
+      text-align: center;
     }
 
     .top-bar span {
       font-weight: bold;
       color: #a51111;
-       
-    }
-
-    .top-bar .auth {
-      color: #fff;
     }
 
     .top-bar .auth a {
@@ -38,8 +35,7 @@
     }
 
     .top-bar .auth a.login {
-    color: #a51111;
-      
+      color: #a51111;
     }
 
     header {
@@ -52,7 +48,7 @@
     }
 
     header .logo {
-      font-size: 50px;
+      font-size: 40px;
       font-weight: bold;
     }
 
@@ -60,11 +56,14 @@
       color: #f26722;
     }
 
+    nav {
+      position: relative;
+    }
+
     nav ul {
       list-style: none;
       display: flex;
       gap: 20px;
-      position: relative;
     }
 
     nav ul li {
@@ -90,7 +89,7 @@
       border: 1px solid #ccc;
       list-style: none;
       padding: 10px;
-      min-width: 150px; 
+      min-width: 150px;
     }
 
     nav ul li:hover ul {
@@ -111,16 +110,44 @@
       font-weight: bold;
     }
 
+    /* Mobile Nav */
+    .menu-toggle {
+      display: none;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        display: none;
+        flex-direction: column;
+        background: #fff;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        padding: 15px;
+        border: 1px solid #ddd;
+      }
+
+      nav ul.showing {
+        display: flex;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+    }
 
     .linksperhaps {
       margin: 20px;
       font-size: 14px;
-     color: #999;
-       font-weight: bold;
+      color: #999;
+      font-weight: bold;
     }
 
     .linksperhaps span {
-        color: #3f3e3e;
+      color: #3f3e3e;
     }
 
     .contact-section {
@@ -130,7 +157,7 @@
     .contact-section h2 {
       color: #f26722;
       margin-bottom: 10px;
-        font-weight: bold;
+      font-weight: bold;
     }
 
     .contact-section p {
@@ -143,10 +170,12 @@
       display: flex;
       justify-content: space-between;
       gap: 30px;
+      flex-wrap: wrap;
     }
 
     .contact-form, .reach-us {
       flex: 1;
+      min-width: 300px;
     }
 
     .contact-form h3, .reach-us h3 {
@@ -154,8 +183,7 @@
       margin-bottom: 10px;
       border-bottom: 5px solid #333;
       padding-bottom: 5px;
-      font-weight: normal; 
-
+      font-weight: normal;
     }
 
     .contact-form form {
@@ -164,7 +192,7 @@
       gap: 10px;
     }
 
-    .contact-form input, 
+    .contact-form input,
     .contact-form textarea {
       padding: 10px;
       border: 1px solid #ddd;
@@ -180,14 +208,18 @@
       font-weight: bold;
       cursor: pointer;
     }
+
     .two-cols {
-         display: flex;
-          gap: 10px;
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
     }
 
     .two-cols input {
       flex: 1;
+      min-width: 120px;
     }
+
     .reach-us p {
       margin: 7px 0;
     }
