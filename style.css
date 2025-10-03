@@ -8,6 +8,7 @@
     body {
       background: #fff;
       color: #333;
+    font-family: 'Open Sans', Arial, sans-serif;
     }
 
     .top-bar {
@@ -36,8 +37,9 @@
       font-weight: bold;
     }
 
-    .top-bar .auth a.signup {
-      color: #ffcc00;
+    .top-bar .auth a.login {
+    color: #a51111;
+      
     }
 
     header {
@@ -88,6 +90,7 @@
       border: 1px solid #ccc;
       list-style: none;
       padding: 10px;
+      min-width: 150px; 
     }
 
     nav ul li:hover ul {
@@ -99,12 +102,13 @@
     }
 
     nav ul li ul li a {
-      color: #333;
+      color: #474646d7;
       font-weight: normal;
     }
 
     nav ul li ul li a:hover {
-      color: #f26722;
+      color: #000000;
+      font-weight: bold;
     }
 
 
@@ -148,8 +152,10 @@
     .contact-form h3, .reach-us h3 {
       color: #f26722;
       margin-bottom: 10px;
-      border-bottom: 3px solid #333;
+      border-bottom: 5px solid #333;
       padding-bottom: 5px;
+      font-weight: normal; 
+
     }
 
     .contact-form form {
@@ -183,7 +189,7 @@
       flex: 1;
     }
     .reach-us p {
-      margin: 5px 0;
+      margin: 7px 0;
     }
 
     .socials {
